@@ -1,0 +1,18 @@
+<div class="form-inline">
+  <div>
+    <label for="rows">Board Rows</label>
+    <input id="rows" type="text" ng-model="gc.rows">
+    <label for="rows">(Default 6)</label>
+  </div>
+  <div>
+    <label for="columns">Board Columns</label>
+    <input id="columns" type="text" ng-model="gc.columns">
+    <label for="rows">(Default 8)</label>
+  </div>
+</div>
+<div>
+  <button class="btn btn-primary"
+          ng-click="gc.reset()" ui-sref="grid">
+    CREATE NEW GRID
+  </button>
+</div>

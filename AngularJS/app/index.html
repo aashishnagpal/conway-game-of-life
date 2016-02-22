@@ -1,0 +1,36 @@
+<html ng-app='app'>
+<head>
+  <meta name="description" content="AngularJs solution for Conway's Game of Life - http://en.wikipedia.org/wiki/Conway's_Game_of_Life" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css" />
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container" ng-controller='gameController as gc'>
+    <div class="page-header text-center">
+      <h1>
+        Conway's Game of Life
+      </h1>
+      <h6>
+        <a target="_blank" href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Learn More</a>
+      </h6>
+    </div>
+    <div class="view-container">
+      <div ui-view></div>
+    </div>
+  </div>
+  <div class="container instructions">
+    <ng-include src="'views/instructions.html'"></ng-include>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/config/config.js"></script>
+  <script src="scripts/controllers/game-controller.js"></script>
+  <script src="scripts/services/cell-factory.js"></script>
+  <script src="scripts/services/board-factory.js"></script>
+  <script src="scripts/services/life-factory.js"></script>
+</body>
+</html>

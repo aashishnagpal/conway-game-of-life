@@ -1,0 +1,26 @@
+<div class="buttons-container">
+  <button class='btn btn-primary btn-sm'
+          ng-show="!gc.isStarted"
+          ng-click="gc.life.next()">
+    NEXT
+  </button>
+  <label for="auto-advance" class="btn btn-default btn-sm">
+    <input id="auto-advance" type="checkbox" 
+           ng-model="gc.isStarted"
+           ng-change="gc.toggleAutoAdvance()"> Auto Advance
+  </label>  
+</div>
+<table class='grid'>
+  <tr ng-repeat="row in gc.board">
+    <td ng-repeat="cell in row"
+        ng-class="{'alive':cell.isAlive}"
+        ng-click="cell.toggle()">
+    </td>
+  </tr>
+</table>
+<div class="buttons-container btn-sm">
+  <button class="btn btn-primary"
+          ng-click="gc.reset()" ui-sref="home">
+    RESET
+  </button>
+</div>

@@ -1,0 +1,61 @@
+.text-center{
+  text-align: center;  
+}
+
+.grid{
+  margin: auto;
+  border-spacing: 0;
+  border: solid 2px #fff;
+}
+
+.grid tr td{
+  margin: 0;
+  padding: 0;
+  border: solid 1px #fff;
+  width: 22px;
+  height: 22px; 
+}
+
+.grid tr td.alive{
+  background: #2A9FD6;
+}
+.grid tr td:hover{
+  cursor:pointer;
+}
+  
+.buttons-container, .view-container{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.buttons-container input[type=checkbox] {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.view-container input{
+  text-align: center;
+}
+
+.form-inline {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.form-inline div{
+  display: table-row;
+}
+
+.form-inline label, .form-inline input {
+  display: table-cell;
+  margin: 5px 10px;
+}
+
+.instructions {
+  background-color: #444;
+  color: #fff;
+}
+
+.instructions h6 {
+  text-align: right;
+}
